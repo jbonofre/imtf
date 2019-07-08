@@ -11,7 +11,7 @@
 
     <modules>
         <module>core</module>
-        <!-- <module>profile</module> -->
+        <module>profile</module>
     </modules>
 
     <properties>

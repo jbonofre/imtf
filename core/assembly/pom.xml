@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>imft-dms</artifactId>
+    <artifactId>imtf-dms</artifactId>
     <name>IMTF :: PoC :: Core :: DMS</name>
     <packaging>pom</packaging>
 

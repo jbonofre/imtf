@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>imtf-poc-features</artifactId>
+    <artifactId>imtf-poc-core-features</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>IMTF :: PoC :: Core :: Features</name>
     <packaging>pom</packaging>
