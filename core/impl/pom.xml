@@ -21,6 +21,11 @@
             <artifactId>imtf-poc-core-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi.cmpn</artifactId>
+            <version>6.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -28,6 +33,18 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Export-Package>!*</Export-Package>
+                        <Import-Package>
+                            com.imtf.poc.core.api;version="[1.0,1.1)",
+                            *
+                        </Import-Package>
+                        <Private-Package>
+                            com.imtf.poc.core.impl
+                        </Private-Package>
+                    </instructions>
+                </configuration>
             </plugin>
         </plugins>
     </build>
