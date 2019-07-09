@@ -9,6 +9,11 @@ cache:
     - .m2/repository/
     - target/
 
+pre-fetch-all-dependencies:
+  stage: pre-fetch-all-dependencies
+  script:
+    - mvn $MAVEN_CLI_OPTS install -DskipTests dependency:resolve dependency:resolve-plugins
+
 build:
   stage: build
   script:
