@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features name="imtf-poc-profile" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
 
-    <repository>mvn:com.imtf.poc/imtf-poc-core-features/[1.0,1.1)/xml</repository>
+    <repository>mvn:com.imtf.poc/imtf-poc-core-features/1.0-SNAPSHOT/xml</repository>
+    <repository>mvn:org.apache.karaf.features/standard/4.2.6/xml/features</repository>
 
     <feature name="imtf-poc-profile" version="1.0-SNAPSHOT">
         <feature>imtf-poc-core-api</feature>
-        <bundle>mvn:com.imtf.poc/imtf-poc-profile-impl/1.0-SNAPSHOT</bundle>
+        <feature>scr</feature>
+        <bundle>mvn:com.imtf.poc/profile-impl/1.0-SNAPSHOT</bundle>
     </feature>
 
 </features>
